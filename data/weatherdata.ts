@@ -1,6 +1,6 @@
 export enum DirectionType { North, NorthEast, East, SouthEast, South, SouthWest, West, NorthWest }
-export enum PerspirationType { Clear, Rain, Snow, Hail, Thunder }
-export interface WeatherDescription { imageurl: string, description: string}
+export enum PerspirationType { Clear, Rain, Snow, Hail, Thunder, Fog, Cloudy, Storm }
+export interface WeatherDescription { imagepath: string, description: string}
 
 export class WeatherData {
     temperature: number;
