@@ -108,9 +108,17 @@
   margin-left: 0.5rem;
 }
 
+.weathercontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 8px;
+}
+
 @media (max-width: 600px) {
-  .grid {
-    width: 100%;
+  .weathercontainer {
     flex-direction: column;
+    justify-content: start;
+    align-items: center;
   }
 }

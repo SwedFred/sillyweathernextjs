@@ -1,9 +1,10 @@
 .container {
-    width: 150px;
+    width: 250px;
     border: 2px solid gray;
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 8px;
 }
 
 .hidden {
@@ -13,10 +14,24 @@
 .image {
   width: 50px;
   height: 50px;
+  margin-top: 8px;
+}
+
+.imagecontainer {
+  display: flex;
+  width: 100px;
+}
+
+.textcontainer {
+  display: flex;
+  justify-content: left;
+  width: 100%;
 }
 
 @media (max-width: 600px) {
-    .container {
-      flex-direction: column;
-    }
+  .container {
+    flex-direction: column;
+    width: 80%;
+    padding-top: 8px;
   }
+}
