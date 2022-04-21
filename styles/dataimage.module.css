@@ -24,7 +24,7 @@
 
 .textcontainer {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   width: 100%;
 }
 

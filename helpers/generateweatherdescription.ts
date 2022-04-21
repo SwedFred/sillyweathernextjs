@@ -23,19 +23,16 @@ const GenerateTemperatureDescription = (temperature: number): WeatherDescription
 
 const GenerateWindDescription = (windForce: number, windDirection: DirectionType): WeatherDescription => {
     const imgpath: string = 'wind'
-
     if (windForce === 0)
         return { imagepath: imgpath, description: 'The winds are still today'}
 
-    const length: number = Object.keys(DirectionType).length;
-    const rnd: number = randomInt(0, length);
     let dir: string = DirectionType[windDirection];
-
     for(var i = 1; i < dir.length; i++) {
         if (dir[i] == dir[i].toUpperCase()) {
             var firstPart: string = dir.slice(0, i);
-            var secondPart: string = dir.slice();
+            var secondPart: string = dir.slice(i);
             dir = firstPart + ' ' + secondPart;
+            break;
         }
     }
     
